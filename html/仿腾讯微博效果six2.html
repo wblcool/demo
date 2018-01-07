@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>练手六b</title>
+<!--<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" />-->
+<link rel="stylesheet" type="text/css" href="../css/six2.css"/>
+</head>
+
+<body>
+
+<div id="weibo">
+  <form>
+     <h2>来，说说你在做什么，想什么</h2>
+    <input type="text" id="username" maxlength="20"/><!--input和图片怎么都对不齐，无论用line-height,还是边距，还是vertical,还是负边距，只能考虑用绝对定位或者浮动了-->
+       <p> <a class="current" href="javascript:;"><img src='../images/six2/face1.gif'/></a>
+            <a href="javascript:;"><img src='../images/six2/face2.gif'/></a>
+            <a href="javascript:;"><img src='../images/six2/face3.gif'/></a>
+            <a href="javascript:;"><img src='../images/six2/face4.gif'/></a>
+            <a href="javascript:;"><img src='../images/six2/face5.gif'/></a>
+            <a href="javascript:;"><img src='../images/six2/face6.gif'/></a>
+            <a href="javascript:;"><img src='../images/six2/face7.gif'/></a>
+            <a href="javascript:;"><img src='../images/six2/face8.gif'/></a>
+     </p>
+     <p><textarea></textarea></p>
+     <p><span>还能输入</span><strong id="count">100</strong><span>个字</span><input  type="button" /></p>
+  </form>
+  <div id="talk">
+      <h3><span>大家在说</span></h3>
+      <ul>
+            <li>
+                <div class="head"><img src="../images/six2/face.gif"/></div>
+                <div class="content">
+                     <p><a href="javascript:;">日久生情:</a></p>
+                     <p>增加了记录广播时间的功能。</p>
+                     <p><span class="timer">10月5日11:20</span><a class="delete" href='javascript:;'>删除</a></p>
+                  </div>
+             </li>
+            <li>
+                <div class="head"><img src="../images/six2/face.gif"/></div>
+                <div class="content">
+                     <p><a href="javascript:;">日久生情:</a></p>
+                     <p>文字录入。</p>
+                     <p><span class="timer">01月5日14:20</span><a class="delete" href='javascript:;'>删除</a></p>
+                  </div>
+             </li>
+              <li>
+                <div class="head"><img src="../images/six2/face.gif"/></div>
+                <div class="content">
+                     <p><a href="javascript:;">日久生情:</a></p>
+                     <p>微笑是一种美丽的语言,是需要我们去传递的语言。</p>
+                     <p><span class="timer">07月5日12:20</span><a class="delete" href='javascript:;'>删除</a></p>
+                  </div>
+             </li>
+             
+      </ul>
+  </div>
+
+
+</div>
+
+
+<script src="../js/jquery-3.0.0.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/six2.js"></script>
+</body>
+</html>

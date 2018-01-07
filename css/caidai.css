@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:20px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+
+#box{width:25%;margin:10px auto;border-radius:10px;background-color:red;border:12px solid #999;padding:4px;background:#FFF;}
+#box dl{background:#1ED542;color:#FFF;font-size:18px;overflow:hidden;}
+#box dl dt,#box dl dd{padding:4px 15px;border-bottom:1px solid #FFF;}
+#box dl dt{cursor:pointer;}
+#box dl dd{background-color:#7DBEFF;}
+#box dl dd a{color:#FFF;font-size:14px;}
+#box dl dd a:hover{text-decoration:underline;}
+#box dl dt.current{background:#09F;}
+
+#open{width:80px;height:30px;line-height:30px;position:absolute;left:20%;top:10%;background-color:red;color:#fff;cursor:pointer;border-radius:4px;font-size:16px;text-align:center;}
+.fix{position:fixed;left:5px;bottom:10%;background-color:red;color:#fff;border-radius:4px;font-size:16px;text-align:center;font-size:12px;}

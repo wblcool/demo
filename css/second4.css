@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+#outer{width:300px;margin:50px auto;}
+#div1{width:200px;height:200px;margin:20px auto;background-color:#000;}
+label{text-align:right;width:5em;display:inline-block;}
+input{margin-left:5px;}

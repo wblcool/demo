@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+form{margin:50px 0 30px 200px;}
+input{display:none;}
+li a{color:white !important;}
+.navbar{background-color:red;}
+label:nth-child(2){background-color:red;color:#999}
+label:nth-child(4){background-color:green;}
+label:nth-child(6){background-color:black;}
+input+label{width:40px;height:40px;display:inline-block;margin-left:20px;position:relative; cursor:pointer;}
+input:checked+label:before{content:"";width:30px;height:30px;border-radius:15px;position:absolute;left:5px;top:5px;background-color:white;}

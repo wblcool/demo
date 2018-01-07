@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font:14px/1.2;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+<!--导航条-->
+#nav,#nav ul,#nav ul>li,#nav ul>li a:hover,#nav .btmnav,#nav .btmnav p,#nav .btmnav p span,#nav .btmnav em{background:url(../icons/nav_bg.png) no-repeat;}
+#nav{background-position:0 -36px;margin:20px auto;width:910px;position:relative; }
+#nav ul{margin-left:20px;height:36px;line-height:36px;background-position:right -72px;}
+#nav ul>li{float:left;width:110px;margin-left:-2px;background-position:0 -108px;}
+#nav ul>li:nth-child(1){background-position:0 0;}
+#nav ul>li>a{color:#FFF;display:block;margin:0 2px 0 4px;text-align:center;}
+#nav ul>li>a:hover{font-size:18px; ;background-position:0 -144px;}
+#nav .btmnav{position:absolute;top:40px;width:auto !important;min-width:110px;white-space:nowrap;background-position:0 -180px;display:none;}
+#nav .btmnav p{margin-left:10px;padding-right:10px;background-position:right -234px;}
+#nav .btmnav em{display:inline-block;background-position:0 -261px;width:11px;height:5px;position:absolute;top:-4px;}
+#nav .btmnav p span{height:27px;line-height:27px;background-position:0 -207px;background-repeat:repeat-x;display:inline-block;}
+#nav .btmnav p span a{color:#44A2FF;font-size:12px;margin:0 3px;}
+#nav .btmnav p span a:hover{background-image:none;border-bottom:solid 2px #44A2FF}
+/*幻灯片*/
+#box1{margin:40px auto;border:1px solid #3CF;border-radius:4px;padding:15px;width:490px;height:170px;position:relative;}
+#box1 .list li{display:none;position:absolute;top:16px;left:16px;border:1px solid #0F3;overflow:hidden;width:490px;height:170px;}
+#box1 .count{position:absolute;bottom:20px;right:25px;}
+#box1 .count li{float:left;list-style:none;width:20px;height:20px;background-color:#FFB973;border-radius:10px;line-height:20px;text-align:center;margin-left:5px;cursor:pointer;}
+#box1 .count  .current{background-color:#FF5C0F;display:block;}
+

@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:20px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+
+#iphone{background:url(../images/six3/1.jpg) no-repeat;position:relative;width:426px;height:630px;margin:10px auto;}
+#lock{position:absolute;left:50%;bottom:21px;width:358px;height:62px;margin-left:-180px;}
+#lock span{position:absolute;width:93px;height:62px;cursor:pointer;background:url(http://fgm.cc/iphone/btn.jpg) no-repeat;border-radius:5px;}
+#menu{position:fixed;bottom:0;margin:40px;text-align:center;width:100%;}

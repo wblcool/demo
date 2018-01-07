@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;font-size:76%}
+body{font-size:20px;}
+img{border:none;}
+
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+/*中间部分样式*/
+.outer{width:500px;margin:20px auto;}
+.tab{background-color:#666;overflow:hidden;border:1px solid #000;}
+.tab li{float:left;padding:0 10px;line-height:30px;height:30px;cursor:pointer;list-style:none;}
+.content{clear:both;border:1px solid #000;border-top:none;}
+.content ul{padding:20px;display:none;}
+.content ul li{margin-bottom:10px;cursor:pointer;}
+.current{background-color:#EFEFEF;}
+
+/*表单样式*/
+dl{width:100px;border:1px solid #333;border-radius:5px;padding:15px 8px;position:absolute;left:40px;top:40px;font-size:0.8em;}
+dl dt{border-bottom:#000 1px solid;margin-bottom:6px; padding-bottom:4px;font-weight:bold;}
+dl dt a{padding-left:10px;color:#00EAEA; font-weight:300}
+dl  input{margin-right:5px;vertical-align:-10%;cursor:pointer;}
+dd label{cursor:pointer;}
+dl dd p{padding:5px 0;}
+
+/*日历样式*/
+#calender{position:absolute;width:210px;padding:10px;border:1px solid #FEC2CD;border-radius:5px;background-color:#E0DFD8;overflow:hidden;top:40px;right:30px;}
+#calender ul{margin-right:-10px ;}
+#calender ul li{float:left;border:1px solid:#666;margin:0  3px 3px 0;list-style:none;}
+#calender ul li a{color:#FFF;font-size:1.2em;padding:4px;display:inline-block;text-align:center;width:42px;height:42px;line-height:20px;background-color:#635E56;cursor:pointer;}
+#calender ul li a:hover{color:#FF4611;background-color:#FFF;}
+#calender ul li a strong{display:block;}
+
+#msg{border:1px solid #FFF;width:200px;clear:both;padding:10px 5px;display:inline-block;margin-top:6px;background-color:#F2F2F2;display:none;}
+#msg p{line-height:20px;}

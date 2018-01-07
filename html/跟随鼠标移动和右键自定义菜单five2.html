@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>练手五a</title>
+<!--<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" />-->
+<link rel="stylesheet" type="text/css" href="../css/five2.css"/>
+</head>
+
+<body >
+<div class="list">
+    <ul>
+        <li><img src="../images/five2shirts/shirt_1.jpg"/></li>
+        <li><img src="../images/five2shirts/shirt_2.jpg"/></li>
+        <li><img src="../images/five2shirts/shirt_3.jpg"/></li>
+        <li><img src="../images/five2shirts/shirt_4.jpg"/></li>
+    </ul>
+</div>
+<div class="big"><img /> </div>
+<ul class="menu">
+   <li><span></span><a href="javascript:;">剪切</a></li>
+   <li><span></span><a href="javascript:;">复制</a></li>
+   <li><span></span><a href="javascript:;">粘贴</a></li>
+</ul>
+
+
+<script src="../js/jquery-3.0.0.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/five2.js"></script>
+<script type="text/javascript">
+/*function mymenu(){
+	var $menu=$('.menu');
+	$menu.css('display','block');
+	var e=window.event;
+	$menu.offset(function(){
+		var local=new Object();
+		      local.left=e.pageX+20;
+		      local.top=e.pageY+20;
+			  return local;})
+			  return false;
+}添加的事件不会覆盖之前的事件，因此默认事件依然存在
+document.addEventListener('contextmenu',mymenu);*/
+  var $menu=$('.menu');
+  document.oncontextmenu=function(){
+	$menu.css('display','block');
+	var e=window.event;
+	$menu.offset(function(){
+		var local=new Object();
+		      local.left=e.pageX+20;
+		      local.top=e.pageY+20;
+			  return local;})
+			  return false;
+	
+	}
+	document.onclick=function(){
+    $menu.css('display','none');
+		}
+</script>
+</body>
+</html>

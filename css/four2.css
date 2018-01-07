@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:20px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+
+form{margin:20px auto;border:2px solid red;width:300px;}
+form h5{height:30px;line-height:30px;color:#F88;border-bottom:2px solid red;text-indent:6px;}
+form p{font-size:12px;height:30px;line-height:30px;}
+form p label{display:inline-block;width:60px;text-align:right;margin-left:30px;}
+form p .txt{width:150px;border-radius:2px;color:#CCC;border:1px solid #CCC}
+form p .btn{width:50px;border-radius:2px;border:1px solid #F00;background-color:#F33;color:#FFF;cursor:pointer;}
+form p .txt_color{color:#000;border:2px solid #9FFFFF;background-color:#FFE8EC;border-radius:6px;}
+#rating{position:absolute;left:50%}
+#rating .item{float:left;width:19px;height:19px;background:url(../icons/star.png) no-repeat;background-position:0 0;}

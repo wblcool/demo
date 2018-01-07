@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:20px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+
+body{}
+
+#weibo{margin:20px auto 20px;border-radius:6px;width:500px;border:2px solid #E1E1E1;position:relative;padding:10px 20px;overflow:hidden;}
+h2{height:40px;line-height:40px;font-size:25px;margin-bottom:10px}
+
+form p:nth-of-type(1){height:40px;line-height:40px;position:absolute;position:absolute;top:55px;left:180px;}
+form p  a{width:30px;height:30px;display:inline-block;margin-left:5px;}
+form p  a img{width:30px;height:30px;opacity:0.5;border-radius:3px;}
+form p  a img:hover{border:1px solid red;width:28px;height:28px;opacity:1;}
+#username{border:1px solid #d0d0d0;border-radius:6px;text-indent:10px;height:30px;margin-top:-5px;}
+form textarea{width:460px;height:60px;border-radius:8px;padding:20px;font-size:20px;margin-top:10px;}
+form p:nth-of-type(3){text-align:right;color:#CECECE;font-size:15px;}
+form p:nth-of-type(3) input{background:url(../images/six2/btn.png) no-repeat;width:112px;height:30px;border:none;margin: 4px 0 0 5px;}
+form p:nth-of-type(3) input:hover{background-position:0 -30px;cursor:pointer;}
+.current{border:1px solid red;width:28px;height:28px;opacity:1;}
+
+#talk h3{background-color:#CEDADD;padding:10px 10px 0 10px;height:30px;}
+#talk h3 span{height:30px;width:100px;background-color:#FFF;font-size:20px;display:inline-block;text-align:center;font-weight:lighter}
+#talk ul{margin-top:10px;}
+#talk ul li{border-bottom:1px dotted #CCCCCC;clear:both;overflow:hidden;}
+#talk ul li:hover{background-color:#EBEBEB;}
+.head{width:70px;padding:10px 0 0 10px;float:left;}
+.head img{border-radius:6px;}
+.content{width:410px;padding:10px 0 0 10px;float:left;overflow:hidden;word-wrap:break-word;}
+.content p{overflow:hidden;}
+.content p:nth-child(1) a:hover{text-decoration:underline;text-decoration-color:red;}
+.content .timer{float:left;font-size:12px;color:#48FFFF;}
+.content .delete{float:right;font-size:12px;margin-right:5px;display:none;}
+.showa{display:block!important;}

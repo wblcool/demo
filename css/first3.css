@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+body{text-align:center;margin:200px;}
+input{vertical-align:-20%}
+label{display:inline-block;margin-left:4px;}
+.warning{width:300px;height:60px;border:#FF641A 1px solid;background-color:#FFE193;padding:10px 5px;position:absolute;text-align:left;left:50%;margin-left:-60px;display:none;}
+.warning p{line-height:20px;}
+.open{display:block;}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>练手四b</title>
+<!--<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" />-->
+<link rel="stylesheet" type="text/css" href="../css/four2.css"/>
+</head>
+
+<body>
+<form>
+<h5>用户登录</h5>
+<p><label>用户名：</label><input type="text" class="txt " value="字母、数字组合"/></p>
+<p><label>密码：</label><input type="text" class="txt" value="至少6位"/></p>
+<p><label></label><input type="button" class="btn" value="登录"/></p>
+</form>
+<div>January(1),February(2),March(3),April(4),May(5),June(6),July(7),Aguest(8),September(9),October(10),November(11),December(12)</div>
+<input type="button" value="删除January(1)" />
+<input type="button" value="删除December(12)" />
+<div>0,1,2,3,4,5,6,7,8,9</div>
+<input type="button" value="复制" />
+<input type="button" value="还原" />
+<div>red,green,blue,white,yellow,black,brown</div>
+<input type="button" value="还原" />
+<input type="button" value="删除前三项" />
+<input type="button" value="删除第二至三项" />
+<input type="button" value="在第二项处插入(orange, purple)" />
+<input type="button" value="替换第二项和第三项" />
+
+<div id="rating">
+        <ul>
+                <li class="item"></li>
+                <li class="item"></li>
+                <li class="item"></li>
+                <li class="item"></li>
+                <li class="item"></li>
+        </ul>
+</div>
+<script type="text/javascript">
+window.onload=function(){
+	var str=document.getElementsByTagName('div');
+	var str1=str[0].innerHTML.split(',');//返回第一个div中的数组
+	
+	var strtext2=str[1].innerHTML//获取第二个div的初始值
+	
+
+	var strtext3=str[2].innerHTML//获取第三个div的初始值
+	var ipt=document.getElementsByTagName('input');
+	//第一个div下的input绑定事件
+		ipt[3].onclick=function(){
+			if(ipt[3].value=="删除January(1)"){
+				str1.shift();  
+				str[0].innerHTML=str1;
+				ipt[3].value="添加January(1)"	
+				}
+			else{
+				str1.unshift('January(1)')
+				str[0].innerHTML=str1;
+				ipt[3].value="删除January(1)"
+					}	
+			}
+		ipt[4].onclick=function(){
+			if(ipt[4].value=="删除December(12)"){
+				str1.pop();  
+				str[0].innerHTML=str1;
+				ipt[4].value="添加December(12)"	
+				}
+			else{
+				str1.push('December(12)')
+				str[0].innerHTML=str1;
+				ipt[4].value="删除December(12)"
+					}	
+			}
+			//第二个div的input绑定事件
+			ipt[5].onclick=function(){
+				var str2=str[1].innerHTML.split(',');//返回第二个div中的数组
+				str[1].innerHTML=str2.concat(str2).join();
+				}
+			ipt[6].onclick=function(){
+				str[1].innerHTML=strtext2;
+				}
+			//第三个div的input绑定事件	
+			ipt[7].onclick=function(){
+				str[2].innerHTML=strtext3;
+				}
+			ipt[8].onclick=function(){	
+				var str3=str[2].innerHTML.split(',');//返回第三个div中的数组
+				str3.splice(0,3)
+				str[2].innerHTML=str3;
+				}
+			ipt[9].onclick=function(){	
+				var str3=str[2].innerHTML.split(',');//返回第三个div中的数组
+				str3.splice(1,2)
+				str[2].innerHTML=str3;
+				}
+			ipt[10].onclick=function(){	
+				var str3=str[2].innerHTML.split(',');//返回第三个div中的数组
+				str3.splice(1,0,'orange','purple')
+				str[2].innerHTML=str3;
+				}	
+			ipt[11].onclick=function(){	
+				var str3=str[2].innerHTML.split(',');//返回第三个div中的数组
+				str3.splice(1,2,'orange','purple')
+				str[2].innerHTML=str3;
+				}		
+			
+	}
+
+
+</script>
+
+<script src="../js/jquery-3.0.0.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/four2.js"></script>
+</body>
+</html>

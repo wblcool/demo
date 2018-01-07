@@ -1,0 +1,5 @@
+@charset "utf-8";
+/* CSS Document */
+div{width:600px;margin:10px auto;}
+div p{line-height:1.2em;padding:10px 8px;border:2px solid #CCC;text-indent:4.5%}
+.dropdown{margin-left:500px;}

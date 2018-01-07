@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:20px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+.list{margin:20px auto;width:768px;}
+.list li{float:left;width:170px;height:170px;cursor:pointer;border:1px solid #ddd;margin:0 10px;cursor:pointer;}
+.list li:hover{border-color:red;}
+.big{position:absolute;width:200px;height:200px;}
+.big img{border:2px solid #ddd;}
+
+.menu{padding:2px;border:1px solid #666;border-radius:3px;font-size:12px;position:absolute;display:none;}
+.menu span{background:url(../icons/ico.png) no-repeat;height:24px;float:left;width:24px;}
+.menu li:nth-child(2) span{background-position:0 -24px;}
+.menu li:nth-child(3) span{background-position:0 -48px;}
+.menu li a{color:#0CF;text-indent:5px;height:24px;line-height:24px;display:inline-block;width:50px;}
+.menu li:hover{background-color:#999;cursor:pointer;}
+.menu li a:hover{color:#fff;}

@@ -1,0 +1,341 @@
+@charset "utf-8";
+/* CSS Document */
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd, input {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 14px;
+}
+img {
+	border: none;
+}
+li {
+	list-style: none;
+}
+input, select, textarea {
+	outline: none;
+}
+textarea {
+	resize: none;
+}
+a {
+	text-decoration: none;
+}
+#box {
+	position: relative;
+	width: 900px;
+	height: 526px;
+	padding: 10px;
+	overflow: hidden;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: 8px solid #B7B7B7;
+}
+#left, #right {
+	position: relative;
+	float: left;
+	width: 445px;
+	height: 100%;
+}
+#right{opacity:0.3;filter:alpha(opacity=30)}
+#left .tab {
+	position: relative;
+	height: 30px;
+}
+#left .tab ul {
+	position: absolute;
+}
+#left .tab li {
+	float: left;
+	line-height: 29px;
+	margin-right: 10px;
+	font-weight: 700;
+	cursor: pointer;
+	padding: 0 10px 0 30px;
+	background-color: #EFEFEF;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px 5px 0 0;
+	background-repeat: no-repeat;
+	background-image: url(../images/seven1/ico.gif);
+}
+#left .tab li.current {
+	color: #267301;
+	cursor: text;
+	line-height: 30px;
+	background-color: #FFF;
+	border-bottom-width: 0;
+}
+#left .tab li.photo1{
+	background-position: 10px 7px;
+}
+#left .tab li.photo2{
+	background-position: 10px -32px;
+}
+#left .tab li.photo3{
+	background-position: 10px -72px;
+	}
+	#left .modelList{
+	position:relative;
+	padding:10px;
+	height:474px;
+	border:1px solid #D4D4D4;
+	border-radius:0 5px 5px 5px;
+}
+	#left .faceType{
+	position:relative;
+	height:32px;
+	line-height:22px;
+}
+#left .faceType ul{
+	float:left;
+	height:32px;
+}
+#left .faceType ul li{
+	float:left;
+	width:50px;
+	height:32px;
+	display:inline;
+	margin-left:10px;
+	text-align:center;
+}
+#left .faceType ul li a:hover{
+	float:left;
+	width:100%;
+	color:#76946E;
+	background:#E1FFD9;	
+}
+#left .faceType .active{
+	position:absolute;
+	top:0;
+	left:0;
+	width:50px;
+	height:32px;
+	line-height:inherit;
+	margin-left:10px;
+	overflow:hidden;
+	background:url(../images/seven1/btn.gif) no-repeat;
+}
+#left .faceType .active ul{
+	position:absolute;
+	left:0;
+	width:420px;
+}
+#left .faceType .active  li{
+	color:#FFF;
+	cursor:text;
+	font-weight:700;
+	margin:0 10px 0 0;	
+}
+#left .content ul{
+	overflow:hidden;
+	zoom:1;
+	margin-left:-15px;
+	padding-top:15px;
+}
+#left .content ul li{
+	float:left;
+	width:80px;
+	height:100px;
+	display:inline;
+	cursor:pointer;
+	overflow:hidden;
+	vertical-align:top;
+	margin:0 0 25px 25px;
+	border:1px solid #E9E9E9;	
+}
+#left .content ul li:hover{
+	border-color:#BAEA99;
+	box-shadow:0px 0px 15px #91E85F;
+	-moz-box-shadow:0px 0px 15px #91E85F;
+	-webkit-box-shadow:0px 0px 15px #91E85F;	
+}
+
+#tools{
+	position:absolute;
+	top:-40px;
+	left:-80px;
+	width:35px;
+	height:173px;
+	overflow:hidden;
+	background:#FFF;
+	border:1px solid #999;
+	border-radius:5px;
+	box-shadow:0px 0px 5px #666;
+	-moz-box-shadow:0px 0px 5px #666;
+	-webkit-box-shadow:0px 0px 5px #666;
+	z-index:4;
+}
+#tools li{
+	color:#666;
+	cursor:pointer;
+	text-align:center;	
+	margin-bottom:10px;
+	background:url(../images/seven1/ico.gif) no-repeat;
+}
+#tools li.open{
+	padding-top:12px;
+	background-position:11px -115px;
+}
+#tools li.close{
+	padding-top:12px;
+	background-position:11px -155px;
+}
+#tools li.camera{
+	color:#CCC;
+	cursor:default;
+	padding-top:17px;
+	background-position:7px -200px;	
+}
+#tools li.gauge{
+	color:#CCC;
+	cursor:default;
+	padding-top:15px;
+	background-position:7px -240px;	
+}
+#tools li.reset{
+	color:#F60;
+	padding-top:22px;
+	background-position:7px -280px;	
+}
+#right{
+	margin-left:10px;		
+}
+#right .mask{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#FFF;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+	z-index:1;
+}
+#right .search{
+	position:relative;
+	height:80px;
+	background:#FBFBFB;
+	border-radius:8px;
+	border:1px solid #D4D4D4;
+	box-shadow:2px 2px 8px #BBB;
+	-moz-box-shadow:2px 2px 5px #BBB;
+	-webkit-box-shadow:2px 2px 8px #BBB;
+}
+#right .search .selectWrap{
+	position:relative;
+	display:inline;
+	float:left;
+	width:100px;
+	height:22px;
+	margin:12px 0 0 9px;	
+}
+#right .search .select,#right .search .btn{
+	display:block;
+	color:#333;
+	width:100px;
+	height:22px;
+	overflow:hidden;
+	background:url(../images/seven1/search.png) no-repeat;	
+}
+#right .search .select{
+	width:90px;
+	line-height:21px;
+	line-height:24px\9;
+	padding-left:10px;	
+}
+#right .search .select:hover{
+	background-position:0 -22px;	
+}
+#right .search .btn {
+	float:left;
+	text-indent:-9999px;
+	margin:12px 0 0 9px;
+	background-position:0 -44px;	
+}
+#right .search .btn:hover {
+	background-position:0 -66px;	
+}
+#right .search .selectWrap ul{
+	position:absolute;
+	width:98px;
+	display:none;
+	overflow:hidden;
+	border:1px solid #B7BABC;	
+	z-index:100;
+}
+#right .search .selectWrap ul li{
+	margin-top:-1px;
+	background:#FFF;
+	border-top:1px solid #B7BABC;	
+}
+#right .search .selectWrap ul li a{
+	display:block;
+	color:#333;
+	height:24px;	
+	line-height:24px;
+	padding-left:10px;
+}
+#right .search .selectWrap ul li a:hover{
+	background:#DAF1FF;	
+}
+#right .search .selectWrap ul li.current a{
+	background:#9AD8FF;	
+}
+#right .glassList{
+	overflow:hidden;
+	zoom:1;
+	width:435px;
+	height:444px;
+	background:url(../images/seven1/loading.gif) 50% 24px no-repeat;	
+}
+#right .glassList ul{
+	float:left;
+	background:#FFF;
+}
+#right .glassList li{
+	float:left;
+	width:145px;
+	height:95px;
+	cursor:pointer;
+	margin-top:15px;
+	text-align:center;
+	border-bottom:1px dashed #CCC;
+}
+#right .glassList li img{
+	display:block;
+	margin:0 auto 6px;
+}
+#right .glassList li:hover img,#right .glassList li.current img{
+	border-radius:5px;
+	width:128px;
+	height:43px;
+	border:1px solid #8CEE93;
+	box-shadow:1px 1px 15px #23DE30;
+	-moz-box-shadow:1px 1px 15px #23DE30;
+	-webkit-box-shadow:1px 1px 15px #23DE30;
+}
+#right .glassList li.current img{
+	border:1px solid #FF7A7A;
+	box-shadow:1px 1px 15px #F00;
+	-moz-box-shadow:1px 1px 15px #F00;
+	-webkit-box-shadow:1px 1px 15px #F00;
+}
+#right .glassList li h5{
+	color:green;
+	font-size:12px;	
+	font-weight:400;
+}
+#left .mask{
+	position:absolute;
+	top:0;
+	left:0;
+	width:452px;
+	height:526px;
+	background:#FFF;
+	
+	z-index:-1;
+	display:none;	
+}
+
+.place{position:absolute;left:60px;top:150px;cursor:move;width:300px;height:77px;z-index:100;background-repeat:no-repeat;}
